@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={good}>good</button>
+      <button onClick={() => store.dispatch({ type: 'GOOD' })}>good</button>
       <button onClick={() => store.dispatch({ type: 'OK' })}>ok</button>
       <button onClick={() => store.dispatch({ type: 'BAD' })}>bad</button>
       <button >reset stats</button>
